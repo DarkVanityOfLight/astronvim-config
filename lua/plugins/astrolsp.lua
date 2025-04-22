@@ -39,6 +39,7 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "ocamllsp",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
@@ -47,6 +48,10 @@ return {
       pylsp = {
         plugins = { pyflakes = { enabled = true } },
         filetypes = { "python" },
+      },
+      ocamllsp = {
+        cmd = { "ocamllsp" },
+        filetypes = { "ocaml" },
       },
     },
     -- customize how language servers are attached

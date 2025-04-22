@@ -60,6 +60,7 @@ return {
   },
 
   { "hrsh7th/vim-vsnip" },
+  { "windwp/nvim-ts-autotag" },
 
   {
     "windwp/nvim-autopairs",
@@ -128,5 +129,14 @@ return {
     opts = {
       shell = "/bin/fish",
     },
+  },
+
+  {
+    "lewis6991/gitsigns.nvim",
+  },
+
+  {
+    "kevinhwang91/nvim-ufo",
+    enabled = false,
   },
 }
